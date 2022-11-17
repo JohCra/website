@@ -726,19 +726,6 @@
             context.font = (size_value / 25) + "px Montserrat";
             context.fillStyle = text_color;
 
-            // Rending Image
-
-            if (window.innerWidth > 800) {
-                const img_x = size_value / 1.005;
-                const img_y = size_value / 15;
-
-                context.translate(img_x, img_y);
-                context.rotate(0.025);
-                context.translate(-img_x, -img_y);
-                context.drawImage(image_3, img_x, img_y, image_3.width * (size_value / 1800), image_3.height * (size_value / 1700));
-                context.resetTransform();
-            }
-
             // Removing Info Texts
 
             let level_count = 0;
