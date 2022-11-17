@@ -673,14 +673,6 @@
                 bounce(this.waves[i], this.wave_height, this.waves[i].nodes[j]);
             }
 
-            if (i === 2 && level < levels.length && levels[level].image !== null && started && window.innerWidth > 800) {
-                context.translate(levels[level].img_x, levels[level].img_y);
-                context.rotate(levels[level].img_rot);
-                context.translate(-levels[level].img_x, -levels[level].img_y);
-                context.drawImage(levels[level].image, levels[level].img_x, levels[level].img_y);
-                context.resetTransform();
-            }
-
             this.waves[i].draw();
         }
 
